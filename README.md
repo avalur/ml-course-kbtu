@@ -83,7 +83,7 @@ Regularization, Optimization, Normalization, Dropout
 
 *Final Project Team Construct*
 
-Practice: DL tip and tricks
+Practice: DL tips and tricks
 
 <span style="color:green">
     Homework 2: Image classification competition (Kaggle InClass)
@@ -275,8 +275,7 @@ Practice: RL examples
 ### Homework and Programming Assignments
 Students are encouraged to discuss assignments with other students, both to share high-level understanding of the design or basic utilities, However, coding and writing of Homeworks must be done individually or by a team submitting as a group. 
 
-### Final Project
-TBD
+### [Final Project](https://github.com/avalur/ml-course-kbtu/tree/main/paper_post.md)
 
 ### Final Exam
 TBD
