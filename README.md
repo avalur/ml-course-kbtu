@@ -56,20 +56,21 @@ Linear regression, Logistic regression and SGD. Practice: Linear/Logistic Regres
 
 Support Vector Machine (SVM), Bias-Variance. Practice: SVM
 
-<span style="color:green">
-    Homework 1: SVM and Bayesian Classifiers
-</span>
 
 **01.10, Lecture 4. Bayesian Learning and Ensemble**
 
 Naive Bayesian Classifier, Decision Tree, Ensemble. Practice: Bayesian Classifiers
 
 ----
-**08.10, Lecture 5. Perceptron, MLP and Backpropagation**
+**[08.10, Lecture 5. Perceptron, MLP and Backpropagation](https://github.com/avalur/ml-course-kbtu/tree/main/week05_nn_backprop)**
 
 Perceptron, Softmax, Multi-Layer Perceptron (MLP), Multi-class Neural Networks, Backpropagation
 
-Practice: Implementation of MLP with NumPy
+Practice: Implementation of neural network with PyTorch for MNIST classification
+
+<span style="color:green">
+    Homework 1: Implementation of MLP with NumPy
+</span>
 
 **15.10, Lecture 6. CNN Basics**
 
