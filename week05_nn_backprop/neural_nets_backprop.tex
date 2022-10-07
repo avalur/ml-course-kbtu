@@ -26,6 +26,9 @@
 
 \usepackage{minted}
 
+\setbeameroption{show notes}
+% \setbeameroption{hide notes}
+
 \title{Lecture 5. Neural networks intro, backpropagation method}
 \author{Alex Avdyushenko}
 \institute{Kazakh-British Technical University}
@@ -57,27 +60,33 @@
       \onslide <2->
       \includegraphics[keepaspectratio,       width=.15\paperwidth]{mmf.png}
       2009, master of math
+      \note<2>{math at Novosibirsk State University}
       
       \onslide <1->
       \includegraphics[keepaspectratio,       width=.15\paperwidth]{pms.png}
-      2003, silver medal      
+      2003, silver medal
+      \note<1>{I was born and grown in faraway snowy Novosibirsk in a beautiful Soviet family: mother doctor, father engineer, older brother. Childhood in the 90s was fun: garages and new buildings as playground, the sea and the forest instilled a love of sports and tourism. In school, about the 5th grade I tried mathematics, already in the 7th I won the regional olympiad, it was almost miracle. Away we go — a physics and mathematics school in the legendary Akademgorodok, close to Obges (microdistrict)...}
     \end{column}
     \begin{column}{.15\paperwidth}
       \vspace{3cm}
       \onslide <3->
       \includegraphics[keepaspectratio,       width=.15\paperwidth]{ict.png}
       2014, phd
+      \note<3>{then science.. "You could not be a scientist, but a candidate must be!”}
     \end{column}
     \begin{column}{.15\paperwidth}
       \vspace{1.5cm}
       \onslide <4->
       \includegraphics[keepaspectratio,       width=.15\paperwidth]{shad.png}
       2016, YDS
+      \note<4>{In the graduate school, I wanted to try something else and the same time the hype about machine learning was growing, Yandex wanted to come to Novosib with the development office and, of course, School of data analysis (SHAD, YDS). This chance could not be missed and I was fortunate to simultaneously become a curator and student of the SHAD branch. It was really difficult: I took academic leave for the first time in my life! Before my graduation in the fourth semester, we had a daughter in our family, but I liked it :)}
     \end{column}
     \begin{column}{.15\paperwidth}
       \onslide <5->
       \includegraphics[keepaspectratio,       width=.15\paperwidth]{yandex.jpg}
       2015-2018, analyst
+      \note<5>{I already worked as an analyst at Yandex for the graduation from SHAD.
+      It was super-useful for about three years of experience in industrial programming and analytics, but I became increasingly aware that I was drawn back to teaching, science and organizing education.}
     \end{column}
     \begin{column}{.15\paperwidth}
       \onslide <6->
@@ -89,14 +98,17 @@
       \onslide <9->
       \includegraphics[keepaspectratio,       width=.12\paperwidth]{kbtu.png}
       2022+, instructor
+      \note<9>{I am very glad to join KBTU university and I am ready to help, communicate, discuss machine learning ideas}
 
       \onslide <8->
       \includegraphics[keepaspectratio,       width=.12\paperwidth]{yandex.jpg}
       2022+, head of ML ed
+      \note<8>{Now I am developing data analysis and machine learning education at Yandex and partner universities}
 
       \onslide <7->
       \includegraphics[keepaspectratio,       width=.12\paperwidth]{spbu.png}
       2019+, docent
+      \note<7>{Then I moved to St.Petersburg to the new department of math and computer science at SPbU. We have such an educational startup within the university — a very strong team led by Stas Smirnov, a winner of the Fields Prize. Support from Yandex, VK, Gazprom Neft and Huawei, many ambitious tasks and one big goal to create «MIT in Russia».}
     \end{column}
 \end{columns}
     
@@ -210,6 +222,7 @@
 
   {\bf Is not implementable} by one neuron
   
+  \pause
   There are two ways to implement:
   \begin{itemize}
       \item By adding a non-linear feature

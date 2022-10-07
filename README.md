@@ -69,7 +69,7 @@ Perceptron, Softmax, Multi-Layer Perceptron (MLP), Multi-class Neural Networks, 
 Practice: Implementation of neural network with PyTorch for MNIST classification
 
 <span style="color:green">
-    Homework 1: Implementation of MLP with NumPy
+    Homework 1: SVM and Bayesian Classifiers
 </span>
 
 **15.10, Lecture 6. CNN Basics**
