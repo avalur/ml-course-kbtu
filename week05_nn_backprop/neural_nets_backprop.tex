@@ -26,8 +26,8 @@
 
 \usepackage{minted}
 
-\setbeameroption{show notes}
-% \setbeameroption{hide notes}
+% \setbeameroption{show notes}
+\setbeameroption{hide notes}
 
 \title{Lecture 5. Neural networks intro, backpropagation method}
 \author{Alex Avdyushenko}
@@ -46,6 +46,7 @@
 
 \begin{frame}
   \frametitle{Five-minute questions}
+  \pause
   \begin{itemize}
     \item What is the name of the course?
     \item What is the teacher's name?
@@ -453,7 +454,7 @@ We want to find the gradients of the loss function $L$ over all inputs of the co
 
 \begin{frame}{A simple example}
 
-Derivative of a function composition $f(g(x))\ \ \to \frac{df}{dx} = \frac{df}{dg} \frac{dg}{dx}$
+Derivative of a functions composition $f(g(x))\ \ \to \frac{df}{dx} = \frac{df}{dg} \frac{dg}{dx}$
 
 Let $f(x, w) = 1 + e^{w_1x + w_0}$
 
@@ -525,7 +526,7 @@ As a result, we are able to calculate all the gradients with simple operations o
       \pause
       \item 3blue1brown about backprop: \href{https://www.youtube.com/watch?v=Ilg3gGewQ5U}{https://www.youtube.com/watch?v=Ilg3gGewQ5U}
       \pause
-      \item The third lecture of the course "Deep Learning on the fingers" from Semyon Kozlov (in Russian): \href{https://www.youtube.com/watch?v=kWTC1NvL894}{https://www.youtube.com/watch?v=kWTC1NvL894}
+      \item The third lecture of the course <<Deep Learning on the fingers>> from Semyon Kozlov (in Russian): \href{https://www.youtube.com/watch?v=kWTC1NvL894}{https://www.youtube.com/watch?v=kWTC1NvL894}
   \end{itemize}
 \end{frame}
 
