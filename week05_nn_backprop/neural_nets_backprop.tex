@@ -181,7 +181,7 @@
  
  $w_0, w_1, \dots, w_n \in \mathbb{R}$ — weights of features
  
- $$a(x, w) = \sigma(\left<w, x\right>) = \sigma \left(\sum\limits_{j=1}^n w_j f_j(x) - w_0 \right),$$
+ $$a(x, w) = \sigma(\left<w, x\right>) = \sigma \left(\sum\limits_{j=1}^n w_j x^j - w_0 \right),$$
  
  $\sigma(z)$ — activation function, for example one of the:
  $\text{sign}(z),\ \frac{1}{1+e^{-z}},\ (z)_+$
@@ -273,7 +273,7 @@
 
 
 \begin{frame}
-  \frametitle{The development of convolutional networks}
+  \frametitle{The progress of convolutional networks}
   \framesubtitle{Or a brief history of ImageNet}
   \begin{center}
     \includegraphics[keepaspectratio, height=0.7\paperheight]{image-net-history.jpg}
