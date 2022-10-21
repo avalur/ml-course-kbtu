@@ -78,7 +78,7 @@ Convolutional Neural Nets (CNN), Pooling, ImageNet
 
 Practice: Implementation of fully-connected NN with NumPy for House numbers classification
 
-**24.10, Lecture 7. Optimization and Training Techniques[https://github.com/avalur/ml-course-kbtu/tree/main/week07_cnn_advanced]**
+**[24.10, Lecture 7. Optimization and Training Techniques](https://github.com/avalur/ml-course-kbtu/tree/main/week07_cnn_advanced)**
 
 Regularization, Optimization, Normalization, Dropout
 
