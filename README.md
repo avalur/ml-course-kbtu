@@ -72,13 +72,13 @@ Practice: Implementation of neural network with PyTorch for MNIST classification
     Homework 1: SVM and Bayesian Classifiers
 </span>
 
-**15.10, Lecture 6. CNN Basics**
+**[15.10, Lecture 6. CNN Basics](https://github.com/avalur/ml-course-kbtu/tree/main/week06_cnn_basics)**
 
 Convolutional Neural Nets (CNN), Pooling, ImageNet
 
-Practice: Implementation of CNN with PyTorch for CIFAR10 classification
+Practice: Implementation of fully-connected NN with NumPy for House numbers classification
 
-**22.10, Lecture 7. Optimization and Training Techniques**
+**24.10, Lecture 7. Optimization and Training Techniques[https://github.com/avalur/ml-course-kbtu/tree/main/week07_cnn_advanced]**
 
 Regularization, Optimization, Normalization, Dropout
 
