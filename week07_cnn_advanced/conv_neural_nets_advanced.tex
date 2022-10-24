@@ -26,8 +26,8 @@
 
 \usepackage{minted}
 
-\setbeameroption{show notes}
-% \setbeameroption{hide notes}
+% \setbeameroption{show notes}
+\setbeameroption{hide notes}
 % \setbeameroption{show only notes}
 
 \title{Lecture 7. Convolutional Neural Networks, advanced technics}
@@ -45,7 +45,7 @@
 \titlepage
 \end{frame}
 
-\note{Hello, today we continue to talk about Convolutional Neural Networks, advanced optimization methods ans architecture.
+\note{Hello, today we continue to talk about Convolutional Neural Networks, advanced optimization methods and architecture.
 
 And again we will start with three questions for five minutes based on the materials of the previous lecture.}
 
@@ -265,7 +265,7 @@ Same formulas for $\nu, \hat\nu, G, \hat G$
                       width=.6\paperwidth]{dropout_shad.png}
    \end{center}
 
-   \note{Dropout is a method of random shutdowns of neurons. It may have two stages: learning stage and application stage.}
+   \note{Dropout is a method of random shutdowns of neurons. It has two stages: learning stage and application stage.}
 
 \end{frame}
 
@@ -342,6 +342,9 @@ Same formulas for $\nu, \hat\nu, G, \hat G$
 
   \pause
   3. Parameters $\gamma_j^\ell, \beta_j^\ell$ are configured by BackProp
+
+  \note{Let's go on to the next important regulzrization method. It is Batch normalization method.}
+
 \end{frame}
 
 
@@ -351,6 +354,9 @@ Same formulas for $\nu, \hat\nu, G, \hat G$
     \includegraphics[keepaspectratio,
                      width=.4\paperwidth]{weight_init_meme.jpg}
   \end{center}
+
+  \note{Also of course very important to choose consistently the Initial Approximation of the Weights.}
+
 \end{frame}
 
 
@@ -369,6 +375,8 @@ Same formulas for $\nu, \hat\nu, G, \hat G$
    \begin{block}{Question}
    What to do in case of ReLU activation?
    \end{block}
+
+  \note{In fact, the consistently rule is quite simple — you need to make sure that the variance of the layers is preserved both during the forward and backward pass through the neural network.}
 \end{frame}
 
 
@@ -402,6 +410,9 @@ Same formulas for $\nu, \hat\nu, G, \hat G$
      \includegraphics[keepaspectratio,
                       width=.3\paperwidth]{skip-connection.jpg}
    \end{center}
+
+  \note{Great, now let's talk a bit about modern neural network architectures.}
+
 \end{frame}
 
 
@@ -431,6 +442,8 @@ Same formulas for $\nu, \hat\nu, G, \hat G$
   \noindent\rule{8cm}{0.4pt}
 
   {\it Hao Li et al.} Visualizing the Loss Landscape of Neural Nets. 2018.
+
+  \note{This is famous image from a paper that almost became a meme in deep learning :)}
 \end{frame}
 
 
@@ -454,6 +467,9 @@ Same formulas for $\nu, \hat\nu, G, \hat G$
   \noindent\rule{8cm}{0.4pt}
 
   {\it S. Zagoruyko, N. Komodakis} \href{https://arxiv.org/pdf/1605.07146.pdf}{Wide Residual Networks, 2017}
+
+  \note{And the final architecture for today's lecture WideResNet, which I recommend paying attention to when solving the competition from the second homework. It has already been posted on github and in teams.}
+
 \end{frame}
 
 

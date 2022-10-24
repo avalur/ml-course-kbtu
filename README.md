@@ -84,10 +84,10 @@ Regularization, Optimization, Normalization, Dropout
 
 *Final Project Team Construct*
 
-Practice: DL tips and tricks
+Practice: Implementation of convolutional NN with PyTorch for CIFAR10
 
 <span style="color:green">
-    Homework 2: Image classification competition (Kaggle InClass)
+    Homework 2: Image classification competition ([Kaggle InClass](https://www.kaggle.com/t/6c13b4a6ee1e48729510c84c251adc59))
 </span>
 
 **29.10, Week 8: Midterm**
