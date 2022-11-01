@@ -88,13 +88,13 @@ Practice: Implementation of convolutional NN with PyTorch for CIFAR10
 
 Homework 2: Image classification competition ([Kaggle InClass](https://www.kaggle.com/t/6c13b4a6ee1e48729510c84c251adc59))
 
-**29.10, Week 8: Midterm**
+**[29.10, Week 8: Midterm](https://github.com/avalur/ml-course-kbtu/tree/main/week08_midterm)**
 
-**05.11, Lecture 9: Recurrent Neural Networks (RNN)**
+**[05.11, Lecture 9: Recurrent Neural Networks (RNN)](https://github.com/avalur/ml-course-kbtu/tree/main/week09_rnn)**
 
-Backpropagation through time (BPTT), RNN, Long short-term memory (LSTM), Gated recurrent unit (GRU)
+Backpropagation through time (BPTT), RNN, Long short-term memory (LSTM), Gated recurrent unit (GRU), Encoder-Decoder architecture
 
-Practice: RNN with PyTorch
+Practice: Implementation RNN with PyTorch
 
 **12.11, Lecture 10: Attention, Transformers**
 
