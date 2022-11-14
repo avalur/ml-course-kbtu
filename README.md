@@ -92,11 +92,12 @@ Homework 2: Image classification competition ([Kaggle InClass](https://www.kaggl
 
 **[05.11, Lecture 9: Recurrent Neural Networks (RNN)](https://github.com/avalur/ml-course-kbtu/tree/main/week09_rnn)**
 
+
 Backpropagation through time (BPTT), RNN, Long short-term memory (LSTM), Gated recurrent unit (GRU), Encoder-Decoder architecture
 
 Practice: Implementation RNN with PyTorch
 
-**12.11, Lecture 10: Attention, Transformers**
+**[12.11, Lecture 10: Attention, Transformers](https://github.com/avalur/ml-course-kbtu/tree/main/week10_attention_transformers)**
 
 Attention Networks, Bidirectional Encoder Representations from Transformers (BERT)
 
