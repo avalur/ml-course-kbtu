@@ -103,7 +103,7 @@ Attention Networks, Bidirectional Encoder Representations from Transformers (BER
 
 Practice: Attention, Transformers
 
-**19.11, Lecture 11: Autoencoder/VAE, GAN**
+**[19.11, Lecture 11: Autoencoder/VAE, GAN](https://github.com/avalur/ml-course-kbtu/tree/main/week11_autoencoder_gan)**
 
 Autoencoder, Variational AutoEncoder (VAE), Self-Supervised Learning, Generative Adversarial Net (GAN)
 
@@ -111,7 +111,7 @@ Practice: Autoencoder/VAE, GAN
 
 *Final Project Proposal: Team Idea presentation*
 
-**26.11, Lecture 12: Intro to Reinforcement Learning (RL)**
+**[26.11, Lecture 12: Intro to Reinforcement Learning (RL)](https://github.com/avalur/ml-course-kbtu/tree/main/week12_rl)**
 
 Reinforcement Learning, Q-Learning, Deep Q-Learning Network (DQN) and Policy Gradients
 
