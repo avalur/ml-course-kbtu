@@ -63,6 +63,7 @@
   \end{itemize}
 \end{frame}
 
+\note{Ok, and as usual now we have five-minutes block. The last one in our course. So prepare yourself and send right answers to me in five minutes.}
 
 \begin{frame}
   \frametitle{Problem Statement}
@@ -74,6 +75,7 @@
   \end{itemize}
 \end{frame}
 
+\note{Great, let's go on and let me remind you, that up to this point, we found the appropriate function f, based on the training set. And it is called supervised learning. Or also we found the inner structure in the set of objects, you know, texts or images, and it is called unsupervised learning, when we haven't answers y.}
 
 \begin{frame}
   \frametitle{Real world}
@@ -86,9 +88,10 @@
   \end{center}
 \end{frame}
 
+\note{Ok, so what we have in real world? Usually we do some action and get the result, and so we are learning gradually.}
 
 \begin{frame}
-  \frametitle{More motivation}
+  \frametitle{One more motivation}
   \framesubtitle{For example, we need to select the main page of a pizzeria website to attract the clients}
 
   \begin{columns}
@@ -105,19 +108,22 @@
         \end{center}
       \end{column}
   \end{columns}
-
 \end{frame}
 
+\note{And another one important example. Suppose you need to choose the most attractive design for the main page of a pizzeria website, but you don’t want to lose a lot of customers, time, money on experiments.}
 
 \begin{frame}
   \frametitle{What approaches are there?}
 
   \begin{itemize}
+    \pause
     \item A/B testing — many users see potentially bad options
+    \pause
     \item multi-armed bandits — a special case of reinforcement learning
   \end{itemize}
 \end{frame}
 
+\note{In A/B testing you divide your customers on two groups (A and B), show them different versions of main page and then measure the results, the conversions and make your conclusions. And what is multi-armed bandits?}
 
 \begin{frame}
   \frametitle{Bernoulli's one-armed bandit}
@@ -128,9 +134,9 @@
 
     Probability of winning $\theta = 0.05$
   \end{center}
-
 \end{frame}
 
+\note{Let's begin from the one-armed bandit. So you pull the handle of a slot machine and you can win with some probability theta.}
 
 \begin{frame}
   \frametitle{Multi-Armed Bandits}
@@ -141,7 +147,7 @@
           \includegraphics[keepaspectratio,
                            width=.2\paperwidth]{data-kopilkabandit.jpg}
 
-        $\theta = 0.02$
+        $\theta_1 = 0.02$
         \end{center}
       \end{column}
       \begin{column}{.25\paperwidth}
@@ -149,7 +155,7 @@
           \includegraphics[keepaspectratio,
                            width=.2\paperwidth]{data-kopilkabandit.jpg}
 
-          $\theta = 0.01 (\min)$
+          $\theta_2 = 0.01 (\min)$
         \end{center}
       \end{column}
       \begin{column}{.25\paperwidth}
@@ -157,7 +163,7 @@
           \includegraphics[keepaspectratio,
                            width=.2\paperwidth]{data-kopilkabandit.jpg}
 
-        $\theta = 0.05$
+        $\theta_3 = 0.05$
         \end{center}
       \end{column}
       \begin{column}{.25\paperwidth}
@@ -165,7 +171,7 @@
           \includegraphics[keepaspectratio,
                            width=.2\paperwidth]{data-kopilkabandit.jpg}
 
-           $\theta = 0.1 (\max)$
+           $\theta_4 = 0.1 (\max)$
         \end{center}
       \end{column}
   \end{columns}
@@ -174,6 +180,7 @@
   We do not know the true probabilities, but we want to come up with a strategy that maximizes the payoff (reward)
 \end{frame}
 
+\note{In multi-armed bandits model you have several handles with some winning probabilities theta one, two and so on.}
 
 \begin{frame}
   \frametitle{Mathematical statement of the problem}
@@ -195,10 +202,10 @@
   \end{block}
 \end{frame}
 
+\note{Ok, now let's move on, to mathematical statement of the problem. ...}
 
 \begin{frame}
   \frametitle{Measure of quality}
-
 
   \pause
   The quality measure of the multi-armed bandit algorithm $a$ is usually {\bf regret} $$ R(a) = \sum\limits_{t=1}^T \left(E(r_{i^*_t}^t) - E (r_{i^a_t}^t)\right)$$
@@ -209,15 +216,15 @@
 
 
 \begin{frame}
-   \frametitle{Multi-Armed Bandits}
+   \frametitle{Multi-Armed Bandits possible applications}
 
    \begin{columns}
      \begin{column}{.4\paperwidth}
-       Possible applications:
+     Areas:
        \begin{itemize}
          \item advertising banners
          \item recommendations (goods, music, movies etc.)
-         \item slot machines
+         \item slot machines in the casino
        \end{itemize}
      \end{column}
      \begin{column}{.4\paperwidth}
@@ -236,6 +243,7 @@
    \end{block}
 \end{frame}
 
+\note{Ok, and what is the possible applications of multi-armed bandits? And there are models of implementing and optimizing the multi-armed bandits, but we won't discuss them in detail here.}
 
 \begin{frame}
   \frametitle{Multi-Armed Bandits}
@@ -254,6 +262,7 @@
    \end{center}
 \end{frame}
 
+\note{So you may increase your metrics for some short period of time by clickbait, but in the long run of course you will lose clients and money consequently.}
 
 \begin{frame}
   \frametitle{Reinforcement Learning}
@@ -274,6 +283,7 @@
   \end{itemize}
 \end{frame}
 
+\note{Let's go on to the Reinforcement Learning model.}
 
 \begin{frame}
   \frametitle{Agent Model in a Changing Environment}
@@ -302,6 +312,7 @@
    \end{columns}
 \end{frame}
 
+\note{So, more formally you have states, actions and rewards. And your task is to find optimal policy to maximize the total reward.}
 
 \begin{frame}
   \frametitle{Cross-entropy method. Algorithm}
@@ -320,6 +331,7 @@
    \end{itemize}
 \end{frame}
 
+\note{The first simple algorithm to find appropriate policy is called cross-entropy method. Here you have some initialization, maybe random, as usual, then you play N sessions, choose best of them by your reward and update your strategy.}
 
 \begin{frame}
   \frametitle{Training Example}
@@ -358,9 +370,10 @@
   \end{center}
 \end{frame}
 
+\note{So the problem is, that we can not even store in memory the whole table of states.}
 
 \begin{frame}
-\frametitle{Approximate cross-entropy method}
+\frametitle{Approximate cross-entropy methods}
 
     Possible solutions:
     \begin{itemize}
@@ -368,10 +381,11 @@
       \pause
       \item get probabilities from $\pi_\theta (a | s)$ machine learning model: linear model, neural network, random forest
       \pause
-      \item often these probabilities need to be further developed later
+      \item often these probabilities need to be further specified later
     \end{itemize}
 \end{frame}
 
+\note{So people invented Approximate cross-entropy methods.}
 
 \begin{frame}
   \frametitle{Approximate cross-entropy method}
@@ -432,6 +446,7 @@
    \end{itemize}
 \end{frame}
 
+\note{... So we need to correct these shortcomings.}
 
 \begin{frame}
   \frametitle{Q-Learning}
@@ -477,19 +492,20 @@
   \end{columns}
 \end{frame}
 
+\note{Here we have Markov's assumption, which is actually not so strong, as we could expect. For example it is true in chess and Starcraft also. Only your current state determines everything, and not the history of the game.}
 
 \begin{frame}
-  \frametitle{Important Features}
+  \frametitle{Important definitions}
     Average absolute win:
     $$ \mathbb{E}_{s_0 \sim p(s_0),} \mathbb{E}_{a_0 \sim \pi(a|s_0),} \mathbb{E}_{s_1, r_0 \sim P (s^\prime,r|s, a)} \dots \left[r_0 + r_1 + \dots + r_T \right]$$
 
     State value function:
     $$ V^{\pi} (s) = \mathbb{E}_\pi [R_t|s_t = s] =
-    \mathbb{E}_\pi \left[\sum\limits_{k=0}^\infty \gamma^k r_{t+k+1} | s_t = s\right],$$
+    \mathbb{E}_\pi \left[\sum\limits_{k=0}^\infty \gamma^k r_{t+k+1} | s_t = s\right]$$
 
     Action value function in state:
     $$ Q^{\pi} (s, a) = \mathbb{E}_\pi [R_t|s_t = s, a_t = a] =
-    \mathbb{E}_\pi \left[\sum\limits_{k=0}^\infty \gamma^k r_{t+k+1} | s_t = s, a_t = a \right],$$
+    \mathbb{E}_\pi \left[\sum\limits_{k=0}^\infty \gamma^k r_{t+k+1} | s_t = s, a_t = a \right]$$
 
     where $\pi$ is the strategy followed by the agent, $\gamma \in [0, 1]$
 \end{frame}
@@ -514,6 +530,8 @@
         \end{itemize}
     \end{itemize}
 \end{frame}
+
+\note{The amazing fact is, that temporal difference training works.}
 
 
 \begin{frame}
@@ -545,7 +563,7 @@
       V_{i+1}(s) &= \max\limits_a [r(s, a) + \gamma \mathbb{E}_{s^\prime \sim P(s^\prime | s, a)} V_{i}(s^\prime)]
     \end{align*}
     \pause
-    \begin{block}{Question}{Note}
+    \begin{block}{Note}
       To use this formula in practice,
       we need to know the transition probabilities $P(s^\prime| s, a)$
     \end{block}
@@ -566,7 +584,7 @@
 
     $$Q(s, a) = \mathbb{E}_{s^\prime} [r(s, a) + \gamma V(s^\prime)]$$
 
-    It is possible to estimate the expected value without an explicit distribution using the Monte Carlo method and averaging over the outcomes:
+    It is possible to estimate the expected value without an explicit distribution, using the Monte Carlo method and averaging over the outcomes:
 
     $$Q(s_t, a_t) \leftarrow \alpha \left(r_t+\gamma \max\limits_a Q(s_{t+1}, a) \right)
     + (1-\alpha) Q(s_{t}, a_{t})$$
@@ -579,50 +597,55 @@
   Environment is Atari game emulator, each frame $210\times 160pix, \ 128col$
   \begin{center}
      \includegraphics[keepaspectratio,
-                      width=.85\paperwidth]{atari_games.png}
+                      width=.95\paperwidth]{atari_games.png}
   \begin{columns}
-      \begin{column}{.18\paperwidth}
+      \begin{column}{.15\paperwidth}
       Pong
       \end{column}
-      \begin{column}{.18\paperwidth}
+      \begin{column}{.15\paperwidth}
       Breakout
       \end{column}
-      \begin{column}{.18\paperwidth}
+      \begin{column}{.15\paperwidth}
       Space Invaders
       \end{column}
-      \begin{column}{.18\paperwidth}
+      \begin{column}{.15\paperwidth}
       Seaquest
       \end{column}
-      \begin{column}{.18\paperwidth}
+      \begin{column}{.15\paperwidth}
       Beam Rider
       \end{column}
   \end{columns}
 \end{center}
    
    \pause
-   $s$ states: 4 consecutive frames compressed to $84 \times 84$
+   \textbf{s} states: 4 consecutive frames compressed to $84 \times 84$
 
-   Actions $a$: 4 to 18, depending on the game
+   Actions \textbf{a}: from 4 to 18, depending on the game
 
-   $r$ Rewards: current in-game SCORE
+   \textbf{r} rewards: current in-game SCORE
 
-   Value function $Q(s, a; w)$: ConvNN with input $s$ and $|A|$ outputs
+   Value function $Q(s, a; w)$: 
 
-  \vspace{1cm}
+   ConvNN with input $s$ and $|A|$ outputs
+
+  \vspace{0.5cm}
   \noindent\rule{8cm}{0.4pt}
 
   {\footnotesize
   {\it V.Mnih et al.} (DeepMind). Playing Atari with deep reinforcement learning. 2013}
 \end{frame}
 
+\note{Ok, and the last reinforcement learning model in our lecture is the Deep Q-Learning Network.}
 
 \begin{frame}
   \frametitle{DQN Method}
 
-  Saving trajectories $(s_t, a_t, r_t)_{t=1}^T$ in reply memory for repeated experience replay
+  \pause
+  Saves trajectories $(s_t, a_t, r_t)_{t=1}^T$ in replay memory for repeated experience replay
 
+  \pause
   \vspace{0.2cm}
-  Approximation of the optimal value function $Q(s_t, a_t)$ for fixed current network parameters ${\color{red} w_t}$
+  Gets approximation of the optimal value function $Q(s_t, a_t)$ for fixed current network parameters ${\color{red} w_t}$
 
   $$y_t =
   \left\{ \begin{aligned}
@@ -631,11 +654,12 @@
   \end{aligned}\right.
   $$
 
-  Loss function for training the neural network model $Q(s, a; w)$:
+  \pause
+  Evaluates loss function for training the neural network model $Q(s, a; w)$:
 
   $$ \mathscr{L} (w) = (Q(s_t, a_t; w) - y_t)^2 $$
 
-  Stochastic gradient SGD (by mini-batches of length 32):
+  with stochastic gradient SGD (by mini-batches of length 32):
 
   $$ w_{t+1} = w_{t} - \eta \left(Q(s_t, a_t; w_t) - y_t\right) \nabla_w Q(s_t, a_t; w_t) $$
 \end{frame}
@@ -649,6 +673,7 @@
   \end{center}
 \end{frame}
 
+\note{Here your see actual CNN structure for Atari game — quite simple, isn't it? And I think you know what happened next :)}
 
 { % all template changes are local to this group.
     \setbeamertemplate{navigation symbols}{}
@@ -683,12 +708,12 @@
 
   \begin{itemize}
     \item we got acquainted with the reinforcement learning problem statement
-    \item remembered multi-armed bandits
+    \item touched a little multi-armed bandits
     \item got acquainted with the methods of cross-entropy, TD-learning and Q-learning
     \item discussed Deep Q-learning Network
     \item did NOT discuss the central method in robotics — policy gradient descent
   \end{itemize}
-  \vspace{0.5cm}
+
   \pause
   What else can you see?
 
