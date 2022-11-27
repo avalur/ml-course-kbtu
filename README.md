@@ -121,9 +121,8 @@ Practice: RL examples
 
 **10.12, Lecture 14: Final Project Presentation**
 
-**17.12, Lecture 15: Final Exam**
+**17.12, Lecture 15: Final Project Presentation**
 
-**24.12, Lecture 16: Final Exam**
 
 ### Assessment criteria
 
@@ -176,7 +175,7 @@ Practice: RL examples
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>20%</td>
+            <td>30%</td>
         </tr>
         <tr>
             <td>2.</td>
@@ -218,28 +217,7 @@ Practice: RL examples
             <td>14</td>
             <td> </td>
             <td> </td>
-            <td>25%</td>
-        </tr>
-        <tr>
-            <td>4.</td>
-            <td>Final Exam</td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td>7</td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td>15</td>
-            <td>16</td>
-            <td>25%</td>
+            <td>40%</td>
         </tr>
         <tr>
             <td>5.</td>
@@ -277,7 +255,6 @@ Students are encouraged to discuss assignments with other students, both to shar
 
 ### [Final Project](https://github.com/avalur/ml-course-kbtu/tree/main/paper_post.md)
 
-### Final Exam
-TBD
+Final project presentations schedule: [link to table](https://docs.google.com/spreadsheets/d/1U-Jl4IJTNARR_17fEqJvdW-nJRFT08iRal3eogsr9fs/edit?usp=sharing).
 
 *Instructor Alex A*
